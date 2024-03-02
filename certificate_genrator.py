@@ -3,7 +3,7 @@ from PIL import Image, ImageDraw, ImageFont
 import smtplib
 
 data = pd.read_excel (r'example.xlsx') #path of excel file
-name_list = data["Full Name"].tolist()
+name_list = data["Full Name"].tolist()#name of the colunm in the excel file
 for name in (name_list):
     im = Image.open(r'image.png')#add the image file name / certificate template 
     d = ImageDraw.Draw(im)
